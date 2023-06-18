@@ -10,7 +10,24 @@
     <script type="text/babel">
       const appEI = document.querySelector('#app');
       const root = ReactDOM.createRoot(appEI);
-      root.render(<h1>こんにちは</h1>);
+      // function Example() {
+      //   return <h1>Hello React</h1>;
+      // }
+      //アロー関数
+      const Example = () => {
+        return <h1>Hello Components</h1>;
+      }
+      //JSXが複数行になるときには()をつける→１つのまとまりですよー
+      // const Example = () => {
+      //   return (
+      //     <div>
+      //       <h1>Hello Components</h1>
+      //     </div>
+      //   );
+      // }
+      //省略形
+      // const Example = () => <h1>Hello Components</h1>
+      root.render(<Example />);
     </script>
 </body>
 </html>
