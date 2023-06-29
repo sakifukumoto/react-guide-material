@@ -7,17 +7,28 @@ const Example = () => {
   return(
     <>
       <p>ボタンAを{countA}回押しました！</p>
-      <button onClick={() => {
+      <button
+        onClick={() => {
         setCountA(countA + 1);
-      }}>countAボタン</button>
+      }}>
+        ボタンA
+      </button>
+
       <p>ボタンBを{countB}回押しました！</p>
-      <button onClick={() => {
+      <button
+        onClick={() => {
         setCountB(countB + 1);
-      }}>countBボタン</button>
+      }}>
+        ボタンB
+      </button>
+
       <p>ボタンCを{countC}回押しました！</p>
-      <button onClick={() => {
+      <button
+        onClick={() => {
         setCountC(countC + 1);
-      }}>countCボタン</button>
+      }}>
+        ボタンC
+      </button>
     </>
   )
 };
